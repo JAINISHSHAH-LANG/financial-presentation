@@ -1,0 +1,90 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="24f1002326@ds.study.iitm.ac.in">
+    <title>Quarterly Earnings Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/theme/black.min.css" id="theme">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/plugin/highlight/monokai.min.css">
+</head>
+<body>
+
+<div class="reveal">
+    <div class="slides">
+        
+        <section>
+            <h1>Q3 Earnings Report</h1>
+            <h3>Financial Services Dept.</h3>
+            <p style="color: cyan; font-weight: bold;">Presenter: 24f1002326@ds.study.iitm.ac.in</p>
+        </section>
+
+        <section data-markdown>
+            <textarea data-template>
+                ## Key Highlights
+                * Revenue: **+15%**
+                * Costs: **-5%**
+            </textarea>
+        </section>
+
+        <section>
+            <h2>Strategic Timeline</h2>
+            <ul>
+                <li class="fragment fade-in">Phase 1: Planning</li>
+                <li class="fragment fade-up">Phase 2: Execution</li>
+                <li class="fragment highlight-red">Phase 3: Review</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Python Logic</h2>
+            <p>ROI Calculation Algorithm:</p>
+            <pre><code data-trim data-noescape class="python language-python" data-line-numbers="1-2|4-5">
+def calculate_roi(revenue, cost):
+    # Calculate Return on Investment
+    if cost == 0:
+        return 0
+    return ((revenue - cost) / cost) * 100
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Frontend Logic</h2>
+            <p>Interactive Dashboard:</p>
+            <pre><code data-trim data-noescape class="javascript language-javascript" data-line-numbers>
+const updateChart = (data) => {
+    const chart = new Chart(ctx, data);
+    chart.render();
+    console.log("Chart updated");
+};
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Financial Modeling</h2>
+            \[ C = S_0 N(d_1) - X e^{-rT} N(d_2) \]
+        </section>
+
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/reveal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/plugin/markdown/markdown.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/plugin/highlight/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/plugin/math/math.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/plugin/notes/notes.min.js"></script>
+
+<script>
+    Reveal.initialize({
+        plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ],
+        hash: true,
+        slideNumber: true
+    });
+</script>
+
+</body>
+</html>

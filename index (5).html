@@ -1,0 +1,88 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="24f1002326@ds.study.iitm.ac.in">
+    <title>Quarterly Earnings Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/theme/black.min.css" id="theme">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/plugin/highlight/monokai.min.css">
+</head>
+<body>
+
+<div class="reveal">
+    <div class="slides">
+        
+        <section>
+            <h1>Q3 Earnings Report</h1>
+            <p class="fragment fade-in" style="color: cyan; font-weight: bold;">
+                Presenter: 24f1002326@ds.study.iitm.ac.in
+            </p>
+        </section>
+
+        <section data-markdown>
+            <textarea data-template>
+                ## Key Financials
+                
+                * Revenue: **+15%**
+                * Costs: **-5%**
+                * EBITDA: **$2.4M**
+            </textarea>
+        </section>
+
+        <section>
+            <h2>Strategic Roadmap</h2>
+            <ul>
+                <li class="fragment fade-in">1. Market Research (Complete)</li>
+                <li class="fragment fade-up">2. Product Development (Ongoing)</li>
+                <li class="fragment fade-right">3. Beta Testing (Q4)</li>
+                <li class="fragment highlight-blue">4. Global Launch (2025)</li>
+                <li class="fragment highlight-red">5. Profit Realization</li>
+                <li class="fragment grow">6. Long-term Growth</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Python Algorithm</h2>
+            <pre><code data-trim data-noescape class="python language-python" data-line-numbers="1|4-5">
+def calculate_roi(revenue, cost):
+    # Calculate Return on Investment
+    if cost == 0:
+        return 0.0
+    return ((revenue - cost) / cost) * 100
+            </code></pre>
+            <p class="fragment">Code reviewed by Compliance.</p>
+        </section>
+
+        <section>
+            <h2>Financial Modeling</h2>
+            <p>Black-Scholes Model:</p>
+            <div class="fragment">
+                \[ C = S_0 N(d_1) - X e^{-rT} N(d_2) \]
+            </div>
+            <p class="fragment">Where \( d_1 \) is volatility.</p>
+        </section>
+
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/reveal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/plugin/markdown/markdown.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/plugin/highlight/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/plugin/math/math.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/plugin/notes/notes.min.js"></script>
+
+<script>
+    Reveal.initialize({
+        plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ],
+        hash: true,
+        slideNumber: true,
+        fragments: true // Explicitly enabled
+    });
+</script>
+
+</body>
+</html>
